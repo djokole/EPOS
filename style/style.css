@@ -1,0 +1,123 @@
+@font-face {
+font-family: Delicious;
+src: url(fonts/Delicious-Roman.otf);
+}
+
+@font-face {
+font-family: Delicious;
+src: url(fonts/Delicious-Bold.otf);
+font-weight: bold;
+}
+
+/*GLOBAL*/
+
+body {
+	margin: 0px;
+	font-family: Delicious;
+	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #d69964;
+	font-weight: bold;
+}
+
+ul {
+	height: 40px;
+	list-style-type: none;
+	margin: auto;
+	display: inline;
+}
+
+nav li {
+	font-size: 32px;
+	display: inline;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+nav {
+	margin-top: 0px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+
+h1 {
+	margin: auto;
+	padding: auto;
+}
+
+h2 {
+	margin: auto;
+	font-size: 40px;
+	text-align: center;
+}
+
+/*SPECIFIC*/
+
+.l {
+	padding-left: 60px;
+}
+
+.title {
+	font-size: 75px;
+}
+
+#about {
+	white-space: nowrap;
+}
+
+.menu-icon {
+	display: none;
+}
+
+#home, #products {
+	border-right: 2px solid;
+}
+
+.firstimg {
+	width: 100%;
+	min-height: 800px;
+	background-image: url("images/kratom3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.imgtext1 {
+	width: 36%;
+	min-height: 170px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 15px; 
+	position: absolute;
+	top: 110px;
+	left: 10%;
+	padding: 15px;
+}
+
+.imgtext1 p {
+	font-size: 26px;
+	background: rgba(0, 0, 0, 0);
+}
+
+#idemo {
+	text-align: center;
+	width: 30%;
+	min-height: 100px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 15px; 
+	color: #234426;
+	position: absolute;
+	top: 18%;
+	left: 60%;
+	font-size: 55px;
+}
+
