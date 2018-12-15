@@ -12,9 +12,11 @@ font-weight: bold;
 /*GLOBAL*/
 
 body {
+	min-height: 100%;
 	margin: 0px;
 	font-family: Delicious;
 	font-size: 22px;
+	overflow: hidden;
 }
 
 a {
@@ -55,12 +57,19 @@ h1 {
 }
 
 h2 {
+	font-weight: bold;
 	margin: auto;
 	font-size: 40px;
 	text-align: center;
 }
 
 /*SPECIFIC*/
+
+
+.container-fluid {
+	padding: 0px;
+}
+
 
 .l {
 	padding-left: 60px;
@@ -82,25 +91,47 @@ h2 {
 	border-right: 2px solid;
 }
 
+/*Glavna stranica*/
+
 .firstimg {
 	width: 100%;
-	min-height: 800px;
-	background-image: url("images/kratom3.jpg");
+	min-height: 100vh;
+	background-image: url("images/kratom.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
 
+
 .imgtext1 {
-	width: 36%;
-	min-height: 170px;
-	background: rgba(255, 255, 255, 0.6);
+	width: 80%;
+	line-height: 2em;
+	height: 250px;
+	background: rgba(255, 255, 255, 0.5);
+	opacity: 0;
 	border-radius: 15px; 
 	position: absolute;
-	top: 110px;
+	top: 140px;
 	left: 10%;
 	padding: 15px;
+	overflow: hidden;
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+#idemo {
+	font-weight: bold;
+	text-align: center;
+	width: 30%;
+	min-height: 80px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 15px; 
+	color: #234426;
+	position: absolute;
+	top: 45%;
+	left: 35%;
+	font-size: 50px;
 }
 
 .imgtext1 p {
@@ -108,16 +139,77 @@ h2 {
 	background: rgba(0, 0, 0, 0);
 }
 
-#idemo {
+/* O Nama stranica*/
+
+.secondimg {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("images/kratom7.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgtext2 {
+	width: 80%;
+	min-height: 170px;
+	background: rgba(255, 255, 255, 0.6);
+	opacity: 0;
+	border-radius: 15px; 
+	position: absolute;
+	top: 160px;
+	left: 10%;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.imgtext2 p, h2 {
+	color: black;
+	opacity: 0.8;
+}
+
+/* Kontakt stranica*/
+
+.thirdimg {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("images/kratom6.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgtext3 {
+	width: 40%;
+	min-height: 200px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 15px; 
+	position: absolute;
+	top: 160px;
+	left: 35%;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+#podaci input {
+	float: right;
+
+}
+
+.deo {
+	display: block;
+	min-height: 50px;
+}
+
+#podaci input[type="submit"] {
+      display: block;
+      float: none;
+      margin: auto;
+}
+
+#pol {
 	text-align: center;
 	width: 30%;
-	min-height: 100px;
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 15px; 
-	color: #234426;
-	position: absolute;
-	top: 18%;
-	left: 60%;
-	font-size: 55px;
+	margin: auto;
 }
 
